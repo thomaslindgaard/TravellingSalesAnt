@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Travelling Sales Ant</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #1b1b1b;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        table#ants-table {
+            border: 1px solid white;
+            align-self: start;
+            border-collapse: collapse;
+        }
+
+        table#ants-table th, table#ants-table td {
+            padding: 2px;
+        }
+
+        td.ant-path-length {
+            text-align: right;
+        }
+    </style>
+    <script src="javascript/p5.js"></script>
+    <!-- <script src="../addons/p5.sound.js"></script> -->
+    <script src="javascript/node.js"></script>
+    <script src="javascript/ant.js"></script>
+    <script src="javascript/graph.js"></script>
+    <script src="javascript/sketch.js"></script>
+</head>
+
+<body>
+<h1>Travelling Sales Ants</h1>
+<main>
+</main>
+
+<table>
+    <tr>
+        <th>Animation speed</th>
+        <td id="animation-speed"></td>
+        <th>Prefer nearest neighbor</th>
+        <td id="prefer-nearest"></td>
+    </tr>
+</table>
+
+<table id="ants-table">
+    <thead>
+    <tr>
+        <th>Ant</th>
+        <th>Path length</th>
+        <th>Color</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</body>
+
+</html>
